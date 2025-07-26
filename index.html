@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="animated-bg"></div>
+
+  <header class="hero">
+    <h1 class="main-title">⚡ Instant QR Code Generator</h1>
+    <p class="sub-title">Create, download, and share custom QR codes for links, text, contacts, and more.</p>
+  </header>
+
+  <main class="container glass">
+    <h2>Generate Your Code Below</h2>
+    <p>Just paste your content and get a QR code in one click!</p>
+
+    <input type="text" id="qrInput" placeholder="Type text or URL..." />
+    
+    <div class="buttons">
+      <button onclick="generateQRCode()">Generate</button>
+      <button onclick="downloadQR()" id="downloadBtn" disabled>Download</button>
+      <button onclick="copyQR()" id="copyBtn" disabled>Copy</button>
+    </div>
+
+    <div id="qrCode" class="qr-output"></div>
+  </main>
+
+  <section class="about">
+    <h3>✨ Why use our QR Code Generator?</h3>
+    <ul>
+      <li>Free, Fast & Lightweight</li>
+      <li>No login or ads</li>
+      <li>Copy or download in one click</li>
+      <li>Perfect for links, WiFi, text, contacts & more</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>🚀 Created by <a href="#">Your Name</a> • <a href="#">GitHub</a> • <a href="#">Live Demo</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
